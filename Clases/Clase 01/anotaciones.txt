@@ -1,0 +1,6 @@
+******* ATAJOS **********{
+    shift + alt => Me copia la linea que quiero
+    ctrl + alt + f => Activo extension prettier y que acomode el codigo
+    ctrl + shift + ñ => Abro la bash
+    alt + z => Acomodo el texto en comparacion a mi pantalla
+}

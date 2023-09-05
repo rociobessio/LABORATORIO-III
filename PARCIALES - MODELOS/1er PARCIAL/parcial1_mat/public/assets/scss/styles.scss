@@ -1,0 +1,48 @@
+@import "./fragments/variables.scss";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+body {
+    background-color: $colorBlue;
+    background-image: linear-gradient(0deg, $colorBlue, $colorMagenta);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    overflow-y: scroll;
+}
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 90%;
+    margin: 30px 0;
+    position: relative;
+}
+.loading {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+@import "./fragments/text.scss";
+@import "./fragments/table.scss";
+@import "./fragments/form.scss";
+@import "./fragments/buttons.scss";
+
+.hidden {
+    display: none !important;
+}

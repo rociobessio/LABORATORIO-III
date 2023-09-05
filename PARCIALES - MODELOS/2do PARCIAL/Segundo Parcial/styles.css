@@ -1,0 +1,256 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: whitesmoke;}
+
+th{
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.listaMascotas{
+
+    display: inline-block;
+    
+}
+
+.disabled{
+
+    width: 100%;
+    background-color:grey !important ;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+
+}
+
+.searchBar{
+     width: 20% !important;
+     padding: 10px 18px !important;
+     margin: 8px  !important;
+     display: inline-block !important;
+     border-radius: 4px !important;
+     box-sizing: border-box !important;
+     border: 1px solid #cccccc !important;
+ }
+
+ .promedio{
+    width: 5% !important;
+    padding: 10px 18px !important;
+    margin: 8px 0 !important;
+    display: inline-block !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    border: 1px solid #cccccc !important;
+ }
+
+input[type=text],[type=number]{
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+.botonPrecio{
+
+    width: 15%;
+    background-color:lightseagreen;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.botonModificar{
+    width: 45%;
+    background-color:lightseagreen;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.disabledMod{
+    width: 45%;
+    background-color:grey;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.botonGuardar{
+    width: 100%;
+    background-color:lightseagreen;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+
+}
+
+.botonEliminar{
+    width: 45%;
+    background-color:red;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.disabledDel{
+    width: 45%;
+    background-color:grey;
+    color: white;
+    padding: 10px 24px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.botonCerrar
+{
+    width: 5%;
+    background-color: red;
+    color: white;
+    padding: 7px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+}
+
+.botonAbrir{
+    width: 5%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    background-color:lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+
+}
+
+
+.botonCerrar
+{
+    width: 5%;
+    background-color: red;
+    color: white;
+    padding: 7px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 90%;
+  
+}
+
+.sinError{
+    border: 1px solid #cccccc !important;
+}
+
+.error{
+    
+    border: 1px solid red !important;
+
+}
+
+.botonAbrir:hover{
+    background-color:lightgreen;
+}
+
+.botonGuardar:hover{
+    background-color:lightgreen;
+}
+
+.botonCerrar:hover{
+    background-color:lightcoral;
+}
+
+.botonEliminar:hover{
+    background-color:lightcoral;
+}
+
+.botonModificar:hover{
+    background-color:lightgreen;
+}
+
+
+.contenedoraflex{
+    display: flex;
+    justify-content: center;
+    width: 100%
+
+}
+
+.contenedor{
+    top: 135px;
+    position: absolute;
+    width: 30%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: none;
+    
+    
+}
+
+.verForm{
+    opacity: 1;
+}
+
+.listaPersonas{
+
+    display: inline-block;
+    
+    }
+    

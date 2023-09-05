@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+     <script type="text/javascript" src="./js/TipoEnumPersona.js"></script>
+     <script type="text/javascript" src="./js/Persona.js"></script>
+     <script type="text/javascript" src="./js/Cliente.js"></script>
+     <script type="text/javascript" src="./js/Logica.js"></script>
+    <title>Modelo I</title>
+</head>
+
+<body>
+    
+    <h1 class="tittleFiltros">ABM - CLIENTES</h1>
+    <br>
+
+    <div class="botonesInteraccion">
+        <input type="button" class="botonGuardar" id="btnAlta" value="AGREGAR" onclick="Personas.AbrirGrilla()">
+        <input type="button" class="botonEliminar" id="btnLimpiarLista" value="LIMPIAR LISTA" onclick="Personas.LimpiarLista()">
+    </div>
+
+    <div class="classFiltros">
+    <h2 class="tittleFiltros">FILTRO - CLIENTES</h2>
+    <label for="comboFiltro">FILTRAR POR</label>
+    <select class="combo" name="comboFiltrar" id="comboFiltro">
+        <option hidden disabled selected value="">Sexo</option>
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+    </select>
+    <label for="promedio">PROMEDIO DE EDAD</label>
+    <input type="text" class="promedio" id="promedio" disabled="true">
+    <input type="button" class="btnPromedio" id="btnPromedio" value="CALCULAR PROMEDIO" onclick="Personas.CalcularPromedio()">
+    </div>  
+
+    <div>
+    <h2 class="tittleColumnas">LISTADO DE PERSONAS </h2> 
+    <label for="comboFiltro">Tildar los campos a mostrar</label>
+    </div>
+
+    <br>
+    <div>
+        <input type="checkbox" id="ckeckID" checked>
+        <label for="ckeckID">ID</label>
+        <input type="checkbox" id="checkNombre" checked>
+        <label for="checkNombre">NOMBRE</label>
+        <input type="checkbox" id="checkApellido" checked>
+        <label for="checkApellido">APELLIDO</label>
+        <input type="checkbox" id="checkEdad" checked>
+        <label for="checkEdad">EDAD</label>
+        <input type="checkbox" id="checkSexo" checked>
+        <label for="checkSexo">SEXO</label>
+    </div>
+    <br>
+    <table id="tabla" border="1">
+        <thead>
+            <tr>
+                <th id="tablaID">ID</th>
+                <th id="tablaNombre">NOMBRE</th>
+                <th id="tablaApellido">APELLIDO</th>
+                <th id="tablaEdad">EDAD</th>
+                <th id="tablaSexo">SEXO</th>
+            </tr>
+        </thead>
+        <tbody id="tCuerpo">
+
+        </tbody>
+
+    </table>
+
+    <!-- POPUP-->
+    <div class="contenedoraflex">
+        <div class="contenedor" id="contGrilla">
+
+            <!-- POPUP - PARAMETROS-->
+            <input class="botonCerrar" type="button" id="btnCerrar" value="X" onclick="Personas.CerrarGrilla()">
+            <br>
+            <h1 class="tittleFiltros">ALTA DE CLIENTE</h2>
+            <br>
+            <label for="personaID">ID</label>
+            <input type="text" id="personaID" class="sinError" disabled="true">
+            <br>
+            <label for="personaNombre">Nombre</label>
+            <input type="text" id="personaNombre" class="sinError">
+            <br>
+            <label for="personaApellido">Apellido</label>
+            <input type="text" id="personaApellido" class="sinError">
+            <br>
+            <label for="personaEdad">Edad</label>
+            <input type="number" max="99" min="1" id="personaEdad" class="sinError">
+            <br>
+            <br>
+            <label for="personaSexo">Sexo</label>
+            <select class="combo" id="personaSexo">
+                <option hidden disabled selected value="">Sexo</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+
+            <!-- POP UP - BOTONES -->
+            <br>
+            <br>
+            <div class="botEliminar">
+            <input class="botonEliminar" type="button" id="btnCerrar" value="Cerrar" onclick="Personas.CerrarGrilla()">
+            <input class="botonEliminar" type="button" id="btnEliminar" value="Eliminar" >
+            </div>
+            <input class="botonGuardar" type="button" id="btnGuardar" value="Agregar" onclick="Personas.Guardar()" >
+
+        </div>
+    </div>
+
+</body>
+</html>

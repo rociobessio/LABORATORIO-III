@@ -1,0 +1,66 @@
+.field {
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &.w-100 {
+        width: 100% !important;
+    }
+
+    p,
+    label {
+        font-weight: 300;
+        text-transform: capitalize;
+        margin-bottom: 3px;
+        color: $colorBlueDark;
+    }
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    textarea,
+    select,
+    input {
+        border-radius: 3px;
+        border: 1px solid $colorBorder;
+        padding: 3px 8px;
+        font-size: 14px;
+        font-weight: 300;
+        min-height: 28px;
+        width: 100%;
+    }
+    &.radio,
+    &.checkbox {
+        flex-direction: row;
+        align-content: flex-end;
+        input {
+            min-height: unset;
+            margin-left: 0;
+            width: auto;
+        }
+        label {
+            margin-right: 8px;
+        }
+        p {
+            margin: 0 0 9px;
+            width: 100%;
+        }
+    }
+    .error-msj {
+        color: $colorMagenta;
+        font-size: 14px;
+        margin-top: 6px;
+        display: none;
+        width: 100%;
+    }
+    &.error {
+        input {
+            border-color: $colorMagenta;
+        }
+        .error-msj {
+            display: block;
+        }
+    }
+}

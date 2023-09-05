@@ -1,0 +1,33 @@
+.filters{
+    margin-bottom: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    h4{
+        margin-bottom: 0;
+    }
+    p{
+        color: $colorBlueDark;
+    }
+    .actions {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 3px 5px;
+            min-height: 34px;
+        }
+    }
+}
+#f_columns{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    .field{
+        margin-bottom: 0;
+    }
+    label{
+        color: white;
+    }
+}

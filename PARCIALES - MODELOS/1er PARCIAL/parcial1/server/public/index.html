@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica parcial</title>
+    <meta name="description" content="UTN, Lab 3, Practica parcial, CRUD js">
+    <meta property="og:title" content="Practica parcial" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost/utn/unt-lab-3/partcial/practica1/" />
+    <meta property="og:image" content="https://antonioperez.pro/wp-content/uploads/2017/12/crud-rails-1.png" />
+    <meta property="og:description" content="UTN, Lab 3, Practica parcial, CRUD js" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="./main.js" type="module"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="row">
+            <div class="logo">
+                <a href="./"><img src="./assets/img/logo.svg" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./nosotros.html"></a>Nosotros</li>
+                    <li><a href="./anuncios.html"></a>Anuncios</li>
+                    <li><a href="./blog.html"></a>Blog</li>
+                    <li><a href="./contact.html"></a>Contacto</li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1>Administracion</h1>
+        <div class="bg"></div>
+    </header>
+
+    <h3>Lista de mascotas
+        <button id="btnNew" class="secondary"><i class="fas fa-plus"></i> Nuevo item </button>
+    </h3>
+    <div id="container">
+        <form class="form close" action="#" method="post">
+            <button id="btnCancelX" class="btnClose" title="Cancelar"><i class="fas fa-times"></i></button>
+            <h2 id="formTitle"></h2>
+            <div class="fieldContainer"></div>
+            <div class="actions">
+                <button id="btnRemove" class="primary outline">Eliminar</button>
+                <button id="btnClear" class="primary outline">Limpiar</button>
+                <button id="btnCancel" class="primary outline hidden">Cancelar</button>
+                <button id="btnSubmit" class="primary">Guardar</button>
+            </div>
+        </form>
+    </div><!-- container -->
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./nosotros.html"></a>Nosotros</li>
+                <li><a href="./anuncios.html"></a>Anuncios</li>
+                <li><a href="./blog.html"></a>Blog</li>
+                <li><a href="./contact.html"></a>Contacto</li>
+            </ul>
+        </nav>
+        <span class="rights">Todos los derechos reservados 2020</span>
+
+    </footer>
+</body>
+
+</html>

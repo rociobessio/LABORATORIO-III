@@ -1,0 +1,23 @@
+h1 {
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    width: 100%;
+    margin-top: 0;
+    color: $colorMagenta;
+}
+
+h3 {
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+p {
+    color: white;
+}

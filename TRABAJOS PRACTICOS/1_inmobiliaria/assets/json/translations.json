@@ -1,0 +1,125 @@
+{
+    "header": {
+        "title": "Venta de Casas y Departamentos",
+        "nav": [
+            {
+                "text": "Nosotros",
+                "link": "./nosotros.html"
+            },
+            {
+                "text": "Anuncios",
+                "link": "./Anuncios.html"
+            },
+            {
+                "text": "Blog",
+                "link": "./Blog.html"
+            },
+            {
+                "text": "Contacto",
+                "link": "./Contacto.html"
+            }
+        ]
+    },
+    "about": {
+        "title": "Más Sobre Nosotros",
+        "us": [
+            {
+                "title": "seguridad",
+                "img": "./assets/img/icono1.svg",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, et ea. Corrupti voluptatem, dignissimos ipsa ab asperiores."
+            },
+            {
+                "title": "el mejor precio",
+                "img": "./assets/img/icono2.svg",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, et ea. Corrupti voluptatem, dignissimos ipsa ab asperiores."
+            },
+            {
+                "title": "a tiempo",
+                "img": "./assets/img/icono3.svg",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, et ea. Corrupti voluptatem, dignissimos ipsa ab asperiores."
+            }
+        ]
+    },
+    "properties": {
+        "title": "Casas y Departamentos en Venta",
+        "prop": [
+            {
+                "img": "./assets/img/anuncio1.jpg",
+                "title": "Casa de Lujo en el Lago",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, et ea. Corrupti voluptatem, dignissimos ipsa ab asperiores, aliquid eveniet.",
+                "price": 450000,
+                "bath": 3,
+                "garage": 3,
+                "bed": 4,
+                "link":"#"
+            },
+            {
+                "img": "./assets/img/anuncio2.jpg",
+                "title": "Casa Minimalista",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, et ea. Corrupti voluptatem, dignissimos ipsa ab asperiores, aliquid eveniet.",
+                "price": 400000,
+                "bath": 3,
+                "garage": 3,
+                "bed": 4,
+                "link":"#"
+            },
+            {
+                "img": "./assets/img/anuncio3.jpg",
+                "title": "Casa con Pileta",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, et ea. Corrupti voluptatem, dignissimos ipsa ab asperiores, aliquid eveniet.",
+                "price": 375000,
+                "bath": 3,
+                "garage": 3,
+                "bed": 4,
+                "link":"#"
+            }
+        ]
+    },
+    "blog": {
+        "title": "Nuestro Blog",
+        "articles": [
+            {
+                "img": "./assets/img/blog1.jpg",
+                "title": "Terraza en el techo de tu casa",
+                "text": "Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero.",
+                "date": "20/10/2019",
+                "by": "Admin"
+            },
+            {
+                "img": "./assets/img/blog2.jpg",
+                "title": "Guía para la decoración de tu hoga",
+                "text": "Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio.",
+                "date": "20/10/2019",
+                "by": "Admin"
+            },
+            {
+                "img": "./assets/img/blog3.jpg",
+                "title": "Consejos para decorar el baño",
+                "text": "Maximiza el espacio en tu baño con esta guia, aprende a combinar colores y aprovechar cada rincon.",
+                "date": "20/10/2019",
+                "by": "Admin"
+            },
+            {
+                "img": "./assets/img/blog4.jpg",
+                "title": "Decora tu habitacion como un profesional",
+                "text": "Consejos para construir decorar la habitacion principal, con los mejores materiales y ahorrando dinero.",
+                "date": "20/10/2019",
+                "by": "Admin"
+            }
+        ]
+    },
+    "comments": [
+        {
+            "text": "El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con todas mis expectativas.",
+            "by": "Juan Perez"
+        },
+        {
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, et ea. Corrupti voluptatem, dignissimos ipsa ab asperiores.",
+            "by": "Lars Ulrich"
+        },
+        {
+            "text": "Amet consectetur adipisicing elit. Numquam, et ea. Corrupti voluptatem, dignissimos ipsa ab asperiores, aliquid eveniet..",
+            "by": "Kirk Hammett"
+        }
+    ]
+}

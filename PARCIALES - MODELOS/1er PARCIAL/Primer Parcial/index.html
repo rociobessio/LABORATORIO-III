@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/funciones.js"> </script>
+    <title>Parcial</title>
+</head>
+
+<body>
+
+    <div class="Cargando" id="Cargando">
+
+        <img src="img/Bean Eater-1s-200px (1).gif">
+
+    </div>
+
+
+    <h2 class="listaPersonas">Lista de personas</h2>
+    <div class="contenedoraflex">
+
+        <div class="contenedorGrilla" id="contGrilla">
+
+            <input class="botonCerrar" type="button" id="btnCerrar" value="x" onclick="cerrarGrilla();">
+            <br>
+
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" id="nombre" name="firstname" placeholder="nombre..." >
+            <br>
+            <label for="final">Fecha de Final</label>
+            <br>
+            <input type="date" id="final" name="date">
+            <br>
+            <label for="turno">Turno</label>
+            <br>
+            <label for="turno">M</label>
+            <input type="radio" id="Tmañana" name="turno" value="Mañana" checked>
+            <br>
+            <label for="turno">N</label>
+            <input type="radio" id="TNoche" name="turno" value="Noche">
+            <br>
+ 
+            <label for="cuatri">Cuatrimestre:</label>
+
+            <select name="cuatrimestre" id="cuatri">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+
+            <input class="botonEliminar" type="button" id="btnEliminar" value="Eliminar">
+            <input class="botonModificar" type="button" id="btnModificar" value="Modificar">
+        </div>
+
+    </div>
+
+    <table id="tabla" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cuatrimestre</th>
+                <th>Fecha de Final</th>
+                <th>Turno</th>
+
+            </tr>
+        </thead>
+        <tbody id="tCuerpo">
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

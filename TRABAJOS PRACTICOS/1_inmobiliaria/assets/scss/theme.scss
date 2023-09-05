@@ -1,0 +1,185 @@
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+}
+@import "colors";
+// @import "grid";
+@import "text";
+img {
+    width: 100%;
+}
+
+button {
+    padding: 15px;
+    margin-top: 25px;
+    min-width: 150px;
+    transition: background 500ms;
+    background: $orange;
+    color: white;
+    cursor: pointer;
+    // cursor: -webkit-grab; cursor: grab;
+    // cursor: -webkit-grabbing; cursor: grabbing;
+    &:hover {
+        background: $orange-hover;
+    }
+    &.secondary {
+        background: $green;
+        color: white;
+        &:hover {
+            background: $green-hover;
+        }
+    }
+}
+nav {
+    ul {
+        list-style-type: none;
+        li {
+            float: left;
+            color: white;
+            padding: 8px 10px;
+            margin-left: 3px;
+            text-transform: capitalize;
+            transition: background 500ms;
+            cursor: pointer;
+            &:hover {
+                background: rgba($color: #000000, $alpha: 0.3);
+            }
+        }
+    }
+}
+header {
+    background: black;
+    padding: 15px 0;
+    height: 35px;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+
+    .logo {
+        /* background: red; */
+        float: left;
+        img {
+            max-width: 220px;
+        }
+    }
+    nav {
+        float: right;
+    }
+    h1 {
+        color: white;
+        font-size: 34px;
+        margin: 20px 0;
+        font-weight: 700;
+    }
+}
+
+.about {
+    text-align: center;
+    img {
+        height: 70px;
+    }
+}
+.properties {
+    .info {
+        border: 1px solid #ccc;
+        border-top: none;
+        padding: 15px;
+        margin-bottom: 15px;
+
+        button {
+            width: 100%;
+        }
+    }
+    img {
+        // border-radius: 5px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .icons {
+        text-align: center;
+        margin-top: 15px;
+        img {
+            height: 35px;
+            @media (max-width: 960px) and (min-width: 720px) {
+                width: 20px;
+            }
+            width: auto;
+        }
+    }
+    .all-container {
+        height: 54px;
+        button {
+            float: right;
+            margin: 0;
+        }
+    }
+}
+.contact {
+    background-image: url("../img/encuentra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+.blog-comments {
+    margin-bottom: 50px;
+    hr {
+        border-top: 5px solid $green;
+        width: 100px;
+    }
+    .blog {
+        article {
+            margin-bottom: 30px;
+            opacity: 0;
+            transition: opacity 1s;
+            transition-timing-function: ease-in-out;
+            &.in{
+                opacity: 1;
+            }
+        }
+    }
+    .comments {
+        background: #4ecc26;
+        background-image: url("../img/comilla.svg");
+        background-repeat: no-repeat;
+        background-position: 15px 20px;
+        background-size: 40px;
+        padding: 20px 30px 60px 60px;
+        border-radius: 15px;
+        color: white;
+        p {
+            line-height: 2;
+            font-size: 22px;
+            @media (max-width: 1140px) and (min-width: 960px) {
+                font-size: 18px;
+            }
+        }
+        p:nth-child(2) {
+            float: right;
+        }
+    }
+}
+footer {
+    background: rgb(46, 46, 46);
+    color: white;
+    height: 60px;
+    padding-top: 10px;
+
+    nav {
+        float: left;
+    }
+    .rigts {
+        float: right;
+        padding-top: 8px;
+    }
+}

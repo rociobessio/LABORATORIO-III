@@ -1,0 +1,71 @@
+// @import "./../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+// @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+
+@import "./fragments/variables.scss";
+
+@import "./fragments/header-footer.scss";
+@import "./fragments/text.scss";
+@import "./fragments/filters.scss";
+@import "./fragments/form.scss";
+@import "./fragments/fields.scss";
+@import "./fragments/table.scss";
+@import "./fragments/buttons.scss";
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+body {
+    background-color: $colorBlue;
+    background-image: linear-gradient(0deg, $colorBlue, $colorMagenta);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    overflow-y: scroll;
+
+    width: 100%;
+    padding: 0 5%;
+    margin: 30px 0;
+    position: relative;
+}
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    // width: 90%;
+    width: 100%;
+    min-height: 100px;
+    // padding: 0 5%;
+    // margin: 30px 0;
+    position: relative;
+}
+.loading {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    align-items: center;
+    .spiner {
+        height: 82px;
+        width: 164px;
+    }
+}
+.hidden {
+    display: none !important;
+}

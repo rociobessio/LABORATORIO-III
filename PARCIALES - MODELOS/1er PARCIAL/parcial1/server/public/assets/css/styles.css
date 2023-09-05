@@ -1,0 +1,449 @@
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+nav ul li {
+  color: white;
+  padding: 8px 10px;
+  margin-left: 3px;
+  text-transform: capitalize;
+  transition: background 500ms;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+header {
+  background: transparent;
+  padding: 15px 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+header .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .row ul {
+  justify-content: flex-end;
+}
+header .logo img {
+  max-width: 60px;
+}
+header h1 {
+  justify-content: center;
+  background: #4258d0;
+  margin: 20px 0 0 0;
+  padding: 7px;
+}
+header .bg {
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+
+footer {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+footer nav ul {
+  justify-content: flex-start;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #4258d0;
+  background-image: linear-gradient(0deg, #4258d0, #e42861);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 0 5%;
+  margin: 30px 0;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+}
+
+.loading {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  align-items: center;
+}
+.loading .spiner {
+  height: 82px;
+  width: 164px;
+}
+
+h1 {
+  color: white;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  width: 100%;
+  margin-top: 0;
+  color: #e42861;
+}
+
+h3 {
+  color: white;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+p {
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+table td,
+table th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+table td:first-child,
+table th:first-child {
+  padding-left: 20px;
+}
+table td:last-child,
+table th:last-child {
+  padding-right: 20px;
+}
+table th {
+  background: #36304a;
+  color: white;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+table th:first-child {
+  border-radius: 5px 0 0 0;
+}
+table th:last-child {
+  border-radius: 0 5px 0 0;
+}
+table tbody {
+  background: white;
+  border-radius: 0 0 5px 5px;
+}
+table tbody tr {
+  transition: background 200ms;
+  transition: color 300ms;
+  transition-timing-function: ease-out;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tbody tr:hover {
+  background: #f792b0;
+}
+table tbody tr.active {
+  background: #e42861;
+  color: whitesmoke;
+}
+table tbody tr:last-child td {
+  border: none;
+}
+table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+table tbody tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+@media only screen and (max-width: 760px) {
+  /* Force table to not be like tables anymore */
+  table,
+thead,
+tbody,
+th,
+td,
+tr {
+    display: block;
+  }
+
+  table {
+    /* Hide table headers*/
+  }
+  table thead tr {
+    display: none;
+  }
+  table tbody {
+    border-radius: 5px;
+  }
+  table tr {
+    padding: 15px 6px;
+  }
+  table tr td {
+    /* Behave  like a "row" */
+    position: relative;
+    padding-left: 50% !important;
+    border: none;
+  }
+  table tr td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-before);
+    /* Se asigna el valor por JS */
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+}
+.form {
+  position: absolute;
+  width: 90%;
+  width: calc(100% - 50px);
+  right: 0;
+  z-index: 500;
+  display: flex;
+  background: white;
+  -webkit-box-shadow: 4px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  padding: 30px 30px;
+  border-radius: 5px;
+  height: auto;
+  max-height: 1000%;
+  transition: max-height 500ms, padding 500ms, top 100ms;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+}
+.form.edit h2:before {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 29px;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #e42861;
+  transition: border-left-color 50ms;
+  transition-timing-function: ease-in-out;
+}
+.form.close {
+  max-height: 0;
+  padding: 0 30px;
+}
+.form.close h2:before {
+  border-left-color: transparent;
+}
+.form .fieldContainer {
+  width: 100%;
+  display: flex;
+}
+.form .field {
+  display: flex;
+  margin-bottom: 15px;
+}
+.form .field.w-100 {
+  width: 100% !important;
+}
+.form .field p,
+.form .field label {
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+.form .field textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+.form .field textarea,
+.form .field select,
+.form .field input {
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  padding: 3px 8px;
+  font-size: 14px;
+  font-weight: 300;
+  min-height: 28px;
+}
+.form .field.radio, .form .field.checkbox {
+  flex-direction: row;
+  align-content: flex-end;
+}
+.form .field.radio input, .form .field.checkbox input {
+  min-height: unset;
+  margin-left: 0;
+}
+.form .field.radio label, .form .field.checkbox label {
+  margin-right: 8px;
+}
+.form .field.radio p, .form .field.checkbox p {
+  margin: 0 0 9px;
+  width: 100%;
+}
+.form .field .error-msj {
+  color: #e42861;
+  font-size: 14px;
+  margin-top: 6px;
+  display: none;
+  width: 100%;
+}
+.form .field.error input {
+  border-color: #e42861;
+}
+.form .field.error .error-msj {
+  display: block;
+}
+.form .actions {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.form .actions button {
+  margin: 3px 5px;
+  min-height: 34px;
+}
+
+.fieldContainer,
+.form {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fieldContainer .field,
+.form .field {
+  width: 49%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 760px) {
+  .fieldContainer,
+.form {
+    width: 100%;
+  }
+  .fieldContainer .field,
+.form .field {
+    width: 100%;
+  }
+  .fieldContainer .actions,
+.form .actions {
+    flex-direction: column;
+  }
+}
+button {
+  padding: 7px 25px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  background: #f2f2f2;
+  color: #36304a;
+}
+button.outline {
+  background: none;
+  border: 1px solid #ddd;
+}
+button:disabled {
+  opacity: 0.5;
+}
+button.primary {
+  background: #e42861;
+  color: white;
+}
+button.primary.outline {
+  background: none;
+  color: #e42861;
+  border: 1px solid #e42861;
+}
+button.primary:active {
+  color: white;
+  background: #50343d;
+}
+button.secondary {
+  background: #4258d0;
+  color: white;
+}
+button.secondary.outline {
+  background: none;
+  color: #4258d0;
+  border: 1px solid #4258d0;
+}
+button.secondary:active {
+  color: white;
+  background: #36304a;
+}
+
+button.btnClose {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 24px;
+  background: none;
+  color: #36304a;
+  position: absolute;
+  right: 22px;
+  top: 17px;
+  height: 34px;
+  width: 34px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

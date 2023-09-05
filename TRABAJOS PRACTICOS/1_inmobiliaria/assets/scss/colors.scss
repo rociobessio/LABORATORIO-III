@@ -1,0 +1,19 @@
+
+// $orange: rgb(255, 163, 37);
+$orange: #E08709;
+$orange-hover: rgb(244, 107, 0);
+$green: rgb(78, 204, 38);
+$green-hover: rgb(78, 163, 38);
+
+.c-primary{
+    color:$orange;
+}
+.c-secondary{
+    color:$green;
+}
+.bg-primary{
+    background:$orange;
+}
+.bg-secondary{
+    background:$green;
+}

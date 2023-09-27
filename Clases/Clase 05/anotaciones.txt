@@ -1,0 +1,40 @@
+********************************************************
+                            FORMULARIOS:
+
+Etiqueta form:        
+        <!-- action es la url de la pagina que procesara la informacion del formulario -->
+        <!-- method por default es GET normalmente lo haremos con AJAX -->
+
+Etiqueta input - label:
+        La etiqueta input es la mas manejable y customizable
+        <label for=""></label>
+        El for del label se linkea con el ID del input
+
+        Es lo mismo hacer esto:
+            <label for="">Nombre: <input type="text" name="" id=""></label>
+        Que esto: 
+            <label for="">Nombre:</label>
+             <input type="text" name="" id="">
+
+    Atributos de input:
+        required => El input es si o si necesario.
+        autocomplete => Para eliminar que recuerde datos, sus valores son ON y OFF.
+        readonly => Es solo de lectura, no se puede escribir.
+        disabled => Estará deshabilitado.
+        placeholder => No es el value es el texto para poner ejemplos o indicaciones.
+        title => Al posicionarnos sobre la caja se mostrara un texto.
+        checked => Se utiliza en radiobuttons y checkboxes
+
+Etiqueta input:submit & input:reset
+        <!-- Envia al servidor los valores del controles de la pagina -->
+        <!-- El formulario lanza el evento SUBMIT -->
+
+
+        Estas dos etiquetas estan utilizadas PRINCIPAL y UNICAMENTE para 
+        usarse dentro de formularios:
+        <input type="reset" value="Reestablecer">
+        <input type="submit" value="Enviar">
+
+        Sino se utiliza la etiqueta button.
+
+*****************************************************************

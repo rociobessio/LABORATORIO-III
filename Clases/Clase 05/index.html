@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- Titulo principal -->
+        <h1 align="center">Home de la página web</h1>
+        <!-- Uso de formulario -->
+        <!-- action es la url de la pagina que procesara la informacion del formulario -->
+        <!-- method por default es GET -->
+        <form action="#">
+
+            <label for="txtNombre">Nombre: 
+                <input type="text" 
+                name="nombre" 
+                id="txtNombre" 
+                required
+                autocomplete="off"
+                placeholder="ex: Juan"
+                title="Ingrese su nombre."/>
+            </label>
+            
+            <label for="txtEdad">Edad: 
+                <input type="number" 
+                name="edad" 
+                id="txtEdad"
+                autocomplete="off"
+                required
+                max="90"
+                min="18"
+                title="Ingrese su edad.">
+            </label>
+
+            <label for="txtEmail">Email: 
+                <input type="email" 
+                name="email" 
+                id="txtEmail" 
+                required 
+                autocomplete="off"
+                placeholder="ex: juan@gmail.com"
+                title="Ingrese un email."/>
+            </label>
+
+            <label for="txtPassword">Contraseña: 
+                <input type="password" 
+                name="password" 
+                id="txtPassword"
+                autocomplete="off"
+                required>
+            </label>
+
+            <!-- Subir archivo -->
+            <p>
+                <label for="txtFile"> Archivo:
+                    <input type="file" 
+                    name="file" 
+                    id="txtFile">
+                </label>
+            </p>
+            <input type="hidden" name="oculto">
+
+            <!-- "Groupbox" -->
+            <fieldset>
+                <legend>Leguajes:</legend>
+                <input type="checkbox" name="lenguaje" id="lenguaje_1" value="C#">C#
+                <input type="checkbox" name="lenguaje" id="lenguaje_2" value="Python">Python
+                <input type="checkbox" name="lenguaje" id="lenguaje_3" value="Javascript">JavaScript
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Género</legend>
+                <!-- Para ser auto excluyentes deben d tener el mismo name -->
+                <input type="radio" name="genero" value="f">Femenino
+                <input type="radio" name="genero" value="m">Masculino
+                <input type="radio" name="genero" value="o" checked>Otro
+            </fieldset>
+
+            <br>
+            <!-- Combo - box -->
+            <label for="cboNacionalidad">Nacionalidad</label>
+            <select name="nacionalidad" >
+                <option value="arg">Argentina</option>
+                <option value="ury">Uruguay</option>
+                <option value="br">Brasil</option>
+            </select>
+
+            <br>
+            <label for="">Comentario</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <br>
+            <br>
+            <!-- Envia al servidor los valores del controles de la pagina -->
+            <!-- El formulario lanza el evento SUBMIT -->
+            <input type="submit" value="Enviar">
+            <!-- Limpiar los contenidos del html -->
+            <input type="reset" value="Reestablecer">
+
+            <!-- <button>Click Me</button> -->
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
